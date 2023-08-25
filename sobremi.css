@@ -1,0 +1,141 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  .nav a {
+      color: rgb(255, 227, 69);
+      text-decoration:none;
+      font-size: 2rem;
+      font-weight: 700;
+      padding: 1rem;
+  }
+  
+  .nav a:hover {
+      background-color: rgb(167, 247, 63);
+      color: rgb(0, 0, 0);
+  }
+
+
+
+
+
+
+body {
+    margin: 0px;
+    padding: 0;
+    background-image: url("fotitos/depositphotos_12722104-stock-photo-green-leaf-keyboard-key-environment.jpg"); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.imgredonda {
+    margin-left: 100px;
+    margin-top: 50px;
+    width:200px;
+    height:200px;
+    border-radius:160px;
+    border:10px solid #19af8a;
+}
+
+@media (max-width: 768px) {
+    .imgredonda {
+        margin-left: 60px;
+        text-align: center;
+    }
+}
+
+.contanido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 10); /* Color gris transparente */
+}
+
+.perfil-informacion {
+    text-align: center;
+    padding: 20px;
+    max-width: 500px;
+    color: #079140; /* Color blanco para el texto */
+    font-size: 50px;
+}
+@media (max-width: 768px) {
+    .perfil-informacion {
+        font-size: 5px;
+        text-align: center;
+    }
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+.iconos {
+    margin-left: 60px;
+}
+
+
+@media (max-width: 768px) {
+  .nav {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .nav a {
+      display: block;
+  }
+}
+
+fieldset {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 10px solid #000000; 
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(245, 201, 6, 0.2); /* Sombra */
+    padding: 20px;
+    background-color: #000000;
+}
+
+.pie {
+    padding: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+   background-color: black;
+   color: aliceblue;
+  }
+   .nombre {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .ciudad {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .telefono {
+    flex: 1;
+    text-align: right;
+  }

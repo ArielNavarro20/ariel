@@ -1,0 +1,104 @@
+
+        html {
+            font-size: 62.5%;
+            box-sizing: border-box;
+        }
+
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+
+        h1 {
+            text-align: left;
+            margin-left: 30px;
+            color: rgb(27, 55, 58);
+            font-size: 40px;
+        }
+
+        h2 {
+            text-align: left;
+            margin-left: 70px;
+            color: rgb(255, 255, 255);
+            font-size: 25px;
+        }
+
+        p {
+            text-align: left;
+            margin-left: 100px;
+            color: rgb(43, 82, 43);
+            font-size: 20px;
+        }
+
+        .imagen {
+            background-image: url("WhatsApp\ Image\ 2023-08-02\ at\ 13.05.54\ \(2\).jpeg");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-top: 200px;
+        }
+
+        .nav-bg {
+            background-color: rgb(31, 30, 30);
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        @media (min-width: 400px) {
+            .nav {
+                display: flex;
+                color: #000;
+                padding: 8px 16px;
+                text-decoration: none;
+            }
+        }
+
+        .nav a {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 2rem;
+            font-weight: 700;
+            padding: 1rem;
+        }
+
+        .nav a:hover {
+            background-color: rgb(247, 228, 63);
+            color: rgb(0, 0, 0);
+        }
+
+        .iconos {
+            margin-left: 60px;
+        }
+
+        /* Responsive styles for mobile */
+        @media (max-width: 400px) {
+            h1 {
+                font-size: 30px;
+                margin-left: 10px;
+            }
+
+            h2 {
+                font-size: 20px;
+                margin-left: 20px;
+            }
+
+            p {
+                font-size: 16px;
+                margin-left: 30px;
+            }
+
+            .imagen {
+                padding-top: 100px;
+            }
+        }
+   
+
+
+

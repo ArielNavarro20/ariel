@@ -1,0 +1,182 @@
+
+
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box; /*box model*/
+    
+}
+*, *::before, *::after { /*boxmodel del de google para regular las imagenes de los px q sean los q quiero*/
+    box-sizing: inherit;
+}
+
+
+h1 {
+    text-align: left;
+    margin-left: 30px;
+    color: rgb(27, 55, 58); /* Ajusta el color del texto según el fondo */
+    font-size: 40px; /* Ajusta el tamaño del título según tus necesidades */
+  }
+
+  h2 {
+    text-align: left;
+    margin-left: 70px;
+    color: rgb(255, 255, 255); /* Ajusta el color del texto según el fondo */
+    font-size: 25px; /* Ajusta el tamaño del título según tus necesidades */
+  }
+
+  p {
+    text-align: left;
+    margin-left: 100px;
+    color: rgb(43, 82, 43); /* Ajusta el color del texto según el fondo */
+    font-size: 20px;
+  }
+
+
+
+.imagen {
+    background-image: url("WhatsApp\ Image\ 2023-08-02\ at\ 13.05.54\ \(2\).jpeg");
+  background-size: cover;
+  /*background-position: center;*/
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 200px;
+  }
+  /*@media (max-width: 768px) {
+    .imagen {
+        background-size: contain;
+        background-size: cover;
+        
+        
+    }
+  }*/
+  @media (max-width: 768px) {
+    .imagen {
+      
+        background-size: contain;
+        background-size: cover;
+        
+        
+    }
+  }
+
+.nav-bg {
+ background-color: rgb(31, 30, 30);
+}
+
+  /*.nav {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}*/
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+.nav a:hover {
+    background-color: rgb(247, 228, 63);
+    color: rgb(0, 0, 0);
+}
+
+.iconos {
+    margin-left: 60px;
+}
+
+
+@media (max-width: 768px) {
+  .nav {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .nav a {
+      display: block;
+  }
+}
+
+.margen {
+  margin-top: 5rem;
+}
+
+
+button{
+
+  box-shadow: 0 0 5px cyan,
+  0 0 25px cyan;
+  background-color: cyan;
+  border-radius: 0.5rem;
+  
+ 
+
+}
+button:hover{
+  box-shadow: 0 0 5px cyan,
+  0 0 25px cyan, 0 0 50px cyan,
+  0 0 100px cyan, 0 0 200px cyan;
+
+}
+.pie {
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+ background-color: black;
+ color: aliceblue;
+}
+ .nombre {
+  flex: 1;
+  text-align: left;
+}
+
+.ciudad {
+  flex: 1;
+  text-align: right;
+}
+
+.telefono {
+  flex: 1;
+  text-align: right;
+}
+/*.boton {
+   
+    background-color: cadetblue ;
+    color: bisque;
+    padding: 3rem, 4rem, 4rem, 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 50%;
+    text-align: center;
+    border: none;
+}
+
+@media (min-width: 700px) {
+  .boton{
+      width: auto;
+  }
+} /* hover para q cambie de color al pasar el cursor sobre el
+.boton:hover {
+  cursor: pointer;
+}
+*/
